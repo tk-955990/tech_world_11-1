@@ -5,8 +5,9 @@ public abstract class Charactor {
 	private String name;
 	private int at;
 	private int df;
-	
+
 	public abstract void attack();
-    public abstract void defence();
+
+	public abstract void defence();
 
 }
