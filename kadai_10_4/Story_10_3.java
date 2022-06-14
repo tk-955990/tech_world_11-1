@@ -10,13 +10,13 @@ public class Story_10_3 {
 
 		SuperHero h2 = new SuperHero();
 		h2.setName("roto");
-		h2.setHp(500);
-		h2.setAt(50);
-		h2.setDf(80);
+		h2.setHp     (500);
+		h2.setAt      (50);
+		h2.setDf      (80);
 
 		System.out.println("ŒÖ‚è‚‚«—EÒ‚ª¡‚±‚±‚É’a¶‚µ‚½");
 		System.out.println("–¼‘O:" + h2.getName());
-		System.out.println("‘Ì—Í:" + h2.getHp());
+		System.out.println("‘Ì—Í:"   + h2.getHp());
 		System.out.println("UŒ‚—Í:" + h2.getAt());
 		System.out.println("–hŒä—Í:" + h2.getDf());
 
@@ -24,17 +24,17 @@ public class Story_10_3 {
 
 		SuperMonster m2 = new SuperMonster();
 		m2.setName("kaiju");
-		m2.setHp(1000);
-		m2.setAt(100);
-		m2.setDf(120);
-		m2.setP_at(50);
-		m2.setPoison(5);
+		m2.setHp     (1000);
+		m2.setAt      (100);
+		m2.setDf      (120);
+		m2.setP_at     (50);
+		m2.setPoison    (5);
 
 		System.out.println("‰ĞX‚µ‚¢‰ö•¨‚ª‚±‚±‚É’a¶‚µ‚½");
-		System.out.println("–¼‘O:" + m2.getName());
-		System.out.println("‘Ì—Í:" + m2.getHp());
-		System.out.println("UŒ‚—Í:" + m2.getAt());
-		System.out.println("–hŒä—Í:" + m2.getDf());
+		System.out.println("–¼‘O:"     + m2.getName());
+		System.out.println("‘Ì—Í:"     + m2.getHp());
+		System.out.println("UŒ‚—Í:"   + m2.getAt());
+		System.out.println("–hŒä—Í:"   + m2.getDf());
 		System.out.println("“ÅUŒ‚—Í:" + m2.getP_at());
 		System.out.println("“Æj‚Ì”:" + m2.getPoison());
 
@@ -42,17 +42,17 @@ public class Story_10_3 {
 
 		SuperMagician mg2 = new SuperMagician();
 		mg2.setName("medeia");
-		mg2.setHp(500);
-		mg2.setAt(30);
-		mg2.setMp(50);
-		mg2.setM_at(50);
-		mg2.setDf(100);
+		mg2.setHp       (500);
+		mg2.setAt        (30);
+		mg2.setMp        (50);
+		mg2.setM_at      (50);
+		mg2.setDf       (100);
 
 		System.out.println("–‚–@g‚¢‚ª‚±‚±‚É’a¶‚µ‚½");
-		System.out.println("–¼‘O:" + mg2.getName());
-		System.out.println("‘Ì—Í:" + mg2.getHp());
-		System.out.println("UŒ‚—Í:" + mg2.getAt());
-		System.out.println("MP:" + mg2.getMp());
+		System.out.println("–¼‘O:"       + mg2.getName());
+		System.out.println("‘Ì—Í:"       + mg2.getHp());
+		System.out.println("UŒ‚—Í:"     + mg2.getAt());
+		System.out.println("MP:"         + mg2.getMp());
 		System.out.println("UŒ‚–‚–@—Í:" + mg2.getM_at());
 
 		System.out.println("========= Game Start !! ================");
@@ -253,21 +253,21 @@ public class Story_10_3 {
 	}
 
 	public static void status(SuperHero h2, SuperMagician mg2, SuperMonster m2) {
-		System.out.println("y" + h2.getName() + ":ƒXƒe[ƒ^ƒXz");
-		System.out.println("‘Ì—Í:" + h2.getHp());
+		System.out.println("y"      + h2.getName() + ":ƒXƒe[ƒ^ƒXz");
+		System.out.println("‘Ì—Í:"   + h2.getHp());
 		System.out.println("UŒ‚—Í:" + h2.getAt());
 		System.out.println("–hŒä—Í:" + h2.getDf());
 
-		System.out.println("y" + mg2.getName() + ":ƒXƒe[ƒ^ƒXz");
-		System.out.println("‘Ì—Í:" + mg2.getHp());
+		System.out.println("y"      + mg2.getName() + ":ƒXƒe[ƒ^ƒXz");
+		System.out.println("‘Ì—Í:"   + mg2.getHp());
 		System.out.println("UŒ‚—Í:" + mg2.getAt());
 		System.out.println("–hŒä—Í:" + mg2.getDf());
-		System.out.println("MP:" + mg2.getMp());
+		System.out.println("MP:"     + mg2.getMp());
 
-		System.out.println("y" + m2.getName() + ":ƒXƒe[ƒ^ƒXz");
-		System.out.println("‘Ì—Í:" + m2.getHp());
-		System.out.println("UŒ‚—Í:" + m2.getAt());
-		System.out.println("–hŒä—Í:" + m2.getDf());
+		System.out.println("y"        + m2.getName() + ":ƒXƒe[ƒ^ƒXz");
+		System.out.println("‘Ì—Í:"     + m2.getHp());
+		System.out.println("UŒ‚—Í:"   + m2.getAt());
+		System.out.println("–hŒä—Í:"   + m2.getDf());
 		System.out.println("“Æj‚Ì”:" + m2.getPoison());
 	}
 
