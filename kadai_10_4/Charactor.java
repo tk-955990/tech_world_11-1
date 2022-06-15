@@ -1,10 +1,10 @@
 package kadai_10_4;
 
 public abstract class Charactor {
-	private int hp;
-	private String name;
-	private int at;
-	private int df;
+	protected int hp;
+	protected String name;
+	protected int at;
+	protected int df;
 
 	public abstract void attack();
 

@@ -2,10 +2,6 @@ package kadai_10_4;
 
 public class Hero extends Charactor {
 
-	private String name;
-	private int hp;
-	private int at;
-	private int df;
 
 	public String getName() {
 		return this.name;
