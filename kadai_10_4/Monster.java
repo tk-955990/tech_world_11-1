@@ -2,6 +2,10 @@ package kadai_10_4;
 
 public class Monster extends Creature {
 
+	private int hp;
+	private String name;
+	private int at;
+	private int df;
 
 	public String getName() {
 		return this.name;

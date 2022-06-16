@@ -164,25 +164,23 @@ public class Story_10_3 {
 
 			// モンスターのターン
 			if ((mg2.getHp() > 0) && (h2.getHp() > 0)) {
-				int random = (int) (Math.random() * 6);
+				int random = (int) (Math.random() * 5);
 				switch (random) {
 				case 0:
-					case_0(h2, m2);
+					attack_h2(h2, m2);
 					break;
 				case 1:
-					case_1(mg2, m2);
+					attack_mg2(mg2, m2);
 					break;
 				case 2:
-					case_2(m2, h2);
+					p_attack_h2(m2, h2);
 					break;
 				case 3:
-					case_3(m2, mg2, h2);
+					p_attack_mg2(m2, mg2, h2);
 					break;
 				case 4:
 					m2.defence();
 					break;
-				case 5:
-					case_5(m2);
 				}
 				status(h2, mg2, m2);
 				if ((mg2.getHp() <= 0) && (h2.getHp() <= 0)) {
@@ -197,19 +195,16 @@ public class Story_10_3 {
 
 			}
 			if ((mg2.getHp() <= 0) && (h2.getHp() > 0)) {
-				int random = (int) (Math.random() * 4);
+				int random = (int) (Math.random() * 3);
 				switch (random) {
 				case 0:
-					case_0(h2, m2);
+					attack_h2(h2, m2);
 					break;
 				case 1:
-					case_2(m2, h2);
+					p_attack_h2(m2, h2);
 					break;
 				case 2:
 					m2.defence();
-					break;
-				case 3:
-					case_5(m2);
 					break;
 				}
 				status(h2, mg2, m2);
@@ -225,19 +220,16 @@ public class Story_10_3 {
 
 			}
 			if ((mg2.getHp() > 0) && (h2.getHp() <= 0)) {
-				int random = (int) (Math.random() * 4);
+				int random = (int) (Math.random() * 3);
 				switch (random) {
 				case 0:
-					case_1(mg2, m2);
+					attack_mg2(mg2, m2);
 					break;
 				case 1:
-					case_3(m2, mg2, h2);
+					p_attack_mg2(m2, mg2, h2);
 					break;
 				case 2:
 					m2.defence();
-					break;
-				case 3:
-					case_5(m2);
 					break;
 				}
 				status(h2, mg2, m2);
@@ -271,19 +263,19 @@ public class Story_10_3 {
 		System.out.println("独針の数:" + m2.getPoison());
 	}
 
-	public static void case_0(SuperHero h2, SuperMonster m2) {
+	public static void attack_h2(SuperHero h2, SuperMonster m2) {
 		m2.attack1(h2);
 		if (h2.getHp() <= 0)
 			System.out.println("@@@@@@@@@@@  " + h2.getName() + "  は死んだ  @@@@@@@@@@");
 	}
 
-	public static void case_1(SuperMagician mg2, SuperMonster m2) {
+	public static void attack_mg2(SuperMagician mg2, SuperMonster m2) {
 		m2.attack2(mg2);
 		if (mg2.getHp() <= 0)
 			System.out.println("@@@@@@@@@@@  " + mg2.getName() + "  は死んだ  @@@@@@@@@@");
 	}
 
-	public static void case_2(SuperMonster m2, SuperHero h2) {
+	public static void p_attack_h2(SuperMonster m2, SuperHero h2) {
 		m2.attack1(h2);
 		if (m2.getPoison() > 0) {
 			m2.poison_Attack1(h2);
@@ -292,7 +284,7 @@ public class Story_10_3 {
 			System.out.println("@@@@@@@@@@@  " + h2.getName() + "  は死んだ  @@@@@@@@@@");
 	}
 
-	public static void case_3(SuperMonster m2, SuperMagician mg2, SuperHero h2) {
+	public static void p_attack_mg2(SuperMonster m2, SuperMagician mg2, SuperHero h2) {
 		m2.attack2(mg2);
 		if (m2.getPoison() > 0) {
 			m2.poison_Attack2(mg2);
@@ -301,10 +293,4 @@ public class Story_10_3 {
 			System.out.println("@@@@@@@@@@@  " + h2.getName() + "  は死んだ  @@@@@@@@@@");
 	}
 
-	public static void case_5(SuperMonster m2) {
-		System.out.println(m2.getName() + "は身構えた");
-		System.out.println(m2.getName() + "の攻撃力が１０ポイント上がった");
-		m2.setAt(m2.getAt() + 10);
-		System.out.println(m2.getName() + "の攻撃力が" + m2.getAt() + "になった");
-	}
 }

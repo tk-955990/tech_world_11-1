@@ -1,7 +1,10 @@
 package kadai_10_4;
 
 public class Magician extends Charactor {
-
+	private int hp;
+	private String name;
+	private int at;
+	private int df;
 	private int mp;
 	private int m_at;
 	// –‚–@‚Å‚ÌUŒ‚
